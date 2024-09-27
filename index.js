@@ -13,7 +13,7 @@ if (fs.existsSync(databasePath)) {
     database = JSON.parse(fileContent);
 }
 
-const { token, prefix, categoryId } = require("./config.js");
+const { token, prefix, categoryId } = require("./config.json");
 client.once("ready", () => {
 console.log("ready");
 });     
